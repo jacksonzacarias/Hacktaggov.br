@@ -69,7 +69,7 @@ url_pc_jpx="YUhSMGNITTZMeTkzZDNjdWQycGlaWFF1WTJ4MVlpOXBibVJsZUQ5aFptWnBiR2xoZEdW
 
 Observe pela imagem que ele foi criptografado em base64, 2 vez para tentar ofuscar. 
 
-![!\[urls base64\](image-1.png)](image/image-1.png)
+![urls base64](image/image-1.png)
 
 </code>
 </pre>
