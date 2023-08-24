@@ -8,7 +8,7 @@
 
 <body>
 
-<h1>Detecção e Análise de Código Malicioso</h1>
+<h1>Detecção e Análise de Código Malicioso em dominios gov.br ou edu.br</h1>
 
 <p>Este documento descreve a análise de um código malicioso encontrado em um site. O código em questão realiza várias ações suspeitas, como manipulação de URLs, redirecionamentos e ocultação de elementos.</p>
 
@@ -56,7 +56,7 @@ Claramente, consegui acha algumas formas que esses 167 sites governamentais e ed
 
 Aqui esta a requesição que fiz pelo burp suite
 
-![Alt text](image.png)
+![Alt text](image/image.png)
 
 Obeserve o titulo *404*, porem a solicitação retorno 200, dentro do corpo da resposta tem cereja do bolo que é script 
 
@@ -69,7 +69,7 @@ url_pc_jpx="YUhSMGNITTZMeTkzZDNjdWQycGlaWFF1WTJ4MVlpOXBibVJsZUQ5aFptWnBiR2xoZEdW
 
 Observe pela imagem que ele foi criptografado em base64, 2 vez para tentar ofuscar. 
 
-![Alt text](image-1.png)
+![!\[urls base64\](image-1.png)](image/image-1.png)
 
 </code>
 </pre>
@@ -88,6 +88,15 @@ url_pc_frmex = mydecx(mydecx(url_pc_frmex));
 url_m_frmex = mydecx(mydecx(url_m_frmex));
 </code>
 </pre>
+
+<h3>Screenshot</h3>
+
+![Pequisa no google](image/pesquisa.png)
+
+<p>Observe o endereço de ip</p>
+
+![Alt text](image/requestIp.jpg)
+
 
 <h2>Conclusão</h2>
 
